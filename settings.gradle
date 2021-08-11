@@ -1,0 +1,2 @@
+rootProject.name = "gtpush"
+include ':app'
