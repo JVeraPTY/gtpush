@@ -4,6 +4,11 @@
     android:id="@+id/root_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
@@ -14,5 +19,59 @@
         android:id="@+id/tv_log"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="preguntas analitycs" />
+
+        <TextView
+            android:id="@+id/question_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="50dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/true_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/true_button"/>
+
+        <Button
+            android:id="@+id/false_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/false_button"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/post_score_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:text="@string/post_score_button"/>
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:text="@string/next_button"/>
+
+    <com.huawei.hms.ads.banner.BannerView
+        android:id="@+id/hw_banner_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        hwads:adId="@string/banner_ad_id"
+        hwads:bannerSize="BANNER_SIZE_360_57" />
 
 </FrameLayout>

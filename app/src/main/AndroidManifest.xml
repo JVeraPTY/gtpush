@@ -26,6 +26,10 @@
         <meta-data
             android:name="push_kit_auto_init_enabled"
             android:value="true" />
+        <meta-data
+            android:name="install_channel"
+            android:value="AppGallery">
+        </meta-data>
     </application>
 
 </manifest>
